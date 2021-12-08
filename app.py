@@ -11,8 +11,11 @@ def login():
         if request.form['username'] != 'admin' or request.form['password'] != 'admin':
             error = 'Invalid Credentials. Please try again.'
         else:
+            # validate username pwd
+
             return redirect(url_for('home'))
     return render_template('login.html', error=error)
+
 
 if __name__ == '__main__':
     app.run(debug=True)

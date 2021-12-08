@@ -1,33 +1,44 @@
-<html>
-  <head>
+
+<head>
     <title>E-Library Application</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-  </head>
-  <body>
-      <h1>E-BookStore Login</h1>
-      <!  image radius >
-      <style>
-      img {
+</head>
+<body>
+<h1>E-BookStore Login</h1>
+<!  image radius >
+<style>
+    img {
         border-radius: 90%;
-      }
-      </style>
-      <div class="search-bar">
-      <img src="{{url_for('static', filename='bookstore-Image1.jpg')}}"/>
-        <div class="search-bar-input">
-          <input type="search" placeholder="Search your book" />
-      </div>
-      </div>
-      <br>
-  <! style and login for the bookstore page>
-   <!username and password>
-  <div class="username&password">
-    <div class="login-form"><label>Bookstore Username: </label><input type="username" class="login-form-control" id="inputUsername" placeholder="Username"></div>
-    <div class="login-form"><label>Password: </label><input type="password" class="login-form-control" id="inputPassword" placeholder="Password"></div>
-  </div>
-  <div class="submit">
-    <div class="login-form"><button type="submit" class="login-button">Login</button></div>
-    <div class="login-form"><a href="#" class="password-forgot">Did you forget your password?</a></div>
-  </div>
-  </body>
+    }
+</style>
+<div class="search-bar">
+    <img src="{{url_for('static', filename='bookstore-Image1.jpg')}}"/>
+
+    <div class="search-bar-input">
+        <input type="search" placeholder="Search your book">
+        <form method="POST" action="display_book_results.html">
+            <input type="submit" class = "search-input-button"/>
+        </form>
+    </div>
+</div>
+
+
+<! style and login for the bookstore page>
+<!username and password>
+<form method="post" action="index.html">
+<div class="login_container">
+<h1>Login</h1>
+
+<input type="email" name="useremail" value=" Enter your email" class="email" />
+
+<input type="password" name="password" value="Enter your password" class="email" />
+
+<a href="display_book_results.html"><div class="login_btn">Login</div></a>
+
+<a href="register_User.html.html"><div id="register_btn"> Register</div></a>
+
+</div>
+
+</form>
+</body>
 </html>

@@ -15,24 +15,11 @@ body {
    align-self: start;
 }
 
-.login-form-control {
-    border: none;
-    border-radius: 20px;
-    background:white;
-}
-
-.login-button {
-    align-content: center;
-    border: 2px solid white;
-    border-radius: 20px;
-    width: 110px
-}
-
-.password-forgot{
-    align-content: center;
-    border: solid white;
-    border-radius: 20px;
-    width: 110px
+.search-input-button {
+    display: inline;
+    border: 0px solid white;
+    border-radius: 5px;
+    width: 50px
 }
 
 .search-bar {
@@ -53,3 +40,53 @@ body {
   text-align: left;
   width: 140%;
 }
+
+/*Login Section*/
+
+.login_container{
+  background:white;
+  width:300px;
+  border-radius:3px;
+  padding:0px 0px 70px 0px;
+  border: darkgoldenrod 5px solid;
+  float: bottom;
+}
+
+.email{
+  background:white;
+  padding: 5px;
+  width:250px;
+  font-size:1em;
+  border-radius:3px;
+}
+
+.password{
+  border-radius:4px;
+  background:white;
+  border: white 3px solid;
+  padding: 5px;
+  width:250px;
+  font-size:1em;
+}
+
+.login_btn{
+  width:100px;
+  color: darkgoldenrod;
+  border-radius:15px;
+  border: black 1px solid;
+  margin-top:10px;
+  margin-bottom:10px;
+  float:left;
+
+}
+
+#register_btn{
+  width:100px;
+  color: darkgoldenrod;
+  border-radius:15px;
+  border: black 1px solid;
+  margin-top:10px;
+  margin-bottom:10px;
+  float:left;
+}
+
