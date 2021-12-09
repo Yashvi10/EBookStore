@@ -4,8 +4,8 @@
         width:100%; height:100%;
         object-fit:contain;
     }
-    /* Position the navbar container inside the image */
-.container {
+
+.display_results_container {
   position: absolute;
   margin: 20px;
   width: auto;
@@ -13,7 +13,7 @@
 
 
 /* The navbar */
-.topnav {
+.navigationBar {
   overflow: hidden;
   background-color: #333;
     padding-right:30px;
@@ -21,9 +21,9 @@
 }
 
 /* Navbar links */
-.topnav a {
+.navigationBar a {
   float: left;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   padding-right:150px;
@@ -33,7 +33,7 @@
   font-size: 17px;
 }
 
-.topnav a:hover {
-    background-color: #ddd;
+.navigationBar a:hover {
+    background-color: white;
     color: black;
 }
