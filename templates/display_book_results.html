@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/display_results.css') }}">
+<div class="bg-img">
+  <div class="container">
+    <div class="topnav">
+      <a href="#buy">Buy </a>
+      <a href="#buy">Rent </a>
+      <a href="#index.html">Donate </a>
+      <a href="#about">Request </a>
+    </div>
+  </div>
+</div>
+</head>
+
+
+<style>
+  /* image dimension */
+    img {
+        display:block;
+        width:100%; height:100%;
+        object-fit:contain;
+    }
+</style>
+    <img src="{{url_for('static', filename='display_books.jpeg')}}" />
+</body>
+</html>

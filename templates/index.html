@@ -1,0 +1,50 @@
+<!Author Saloni Raythatha !>
+
+<head>
+    <title>E-Library Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+<h1>E-Library Login</h1>
+<!  image radius >
+<style>
+    img {
+        border-radius: 90%;
+    }
+</style>
+<div class="search-bar">
+    <img src="{{url_for('static', filename='bookstore-Image1.jpg')}}"/>
+
+    <div class="search-bar-input">
+        <input type="search" placeholder="Search your book">
+        <form method="POST" action="display_book_results.html">
+            <input type="submit" class = "search-input-button"/>
+        </form>
+    </div>
+</div>
+
+
+<! style and login for the bookstore page>
+<!username and password>
+<div class="login_container">
+<h1>Login</h1>
+<form method="post" action="/login">
+    <input class="email" type="email" name="email" placeholder="Your Email" autofocus="">
+    <input class="email" type="password" name="password" placeholder="Your Password">
+    <button>Login</button>
+
+<!--<a href="logged_in.html"><div input type="submit" name="login_button" value="login_value" class="login_btn">Login</div></a>-->
+
+<!--<a href="register_User.html.html"><div id="register_btn"> Register</div></a>-->
+
+<!--    <script>-->
+<!--        function goPython() {-->
+<!--            username = document.getElementById("useremail").value-->
+<!--            password = document.getElementById("password").value-->
+
+<!--        }-->
+<!--    </script>-->
+</form>
+</div>
+</body>
+</html>
