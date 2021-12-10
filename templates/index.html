@@ -1,10 +1,10 @@
 <!Author Saloni Raythatha !>
-
 <head>
     <title>E-Library Application</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
+<p>{{error}}</p>
 <h1>E-Library Login</h1>
 <!  image radius >
 <style>
@@ -16,9 +16,9 @@
     <img src="{{url_for('static', filename='bookstore-Image1.jpg')}}"/>
 
     <div class="search-bar-input">
-        <input type="search" placeholder="Search your book">
         <form method="POST" action="display_book_results.html">
-            <input type="submit" class = "search-input-button"/>
+            <input name="search" type="search" placeholder="Search your book">
+            <input name="search" type="submit" class = "search-input-button"/>
         </form>
     </div>
 </div>
@@ -28,10 +28,13 @@
 <!username and password>
 <div class="login_container">
 <h1>Login</h1>
-<form method="post" action="/login">
+<form method="post" action="/registration">
     <input class="email" type="email" name="email" placeholder="Your Email" autofocus="">
     <input class="email" type="password" name="password" placeholder="Your Password">
-    <button>Login</button>
+    <div><input type="submit" name="register_btn" value="Register"></div>
+    <div><input type="submit" name="login_btn" value="Login"></div>
+
+
 
 <!--<a href="logged_in.html"><div input type="submit" name="login_button" value="login_value" class="login_btn">Login</div></a>-->
 

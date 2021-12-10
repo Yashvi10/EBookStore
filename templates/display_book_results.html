@@ -4,13 +4,20 @@
 <body>
 <link rel="stylesheet" href="{{ url_for('static', filename='css/display_results.css') }}">
 <div class="bg-img">
-  <div class="display_results_container">
-    <div class="navigationBar">
+  <div class="navigationBar">
       <a href="#buy">Buy </a>
       <a href="#rent">Rent </a>
       <a href="#index.html">Donate </a>
       <a href="#requestbook">Request </a>
     </div>
+  <div class="display_results_container">
+    {% for e in items %}
+    {{e['year']}}
+    {{e['title']}}
+    <div class="image_container">
+      <img src={{e['bookurl']}}>
+    </div>
+    {% endfor %}
   </div>
 </div>
 </head>

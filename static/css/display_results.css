@@ -11,6 +11,10 @@
   width: auto;
 }
 
+.image_container {
+  width: 200px;
+    height: 200px;
+}
 
 /* The navbar */
 .navigationBar {
