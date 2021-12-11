@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block head%}
+<title>Buy</title>
+{% endblock %}
+{% block body%}
+<table border="1" align="center">
+     <tr>
+        <td>Book Name</td>
+        <td>Author Name</td>
+         <td>Genre</td>
+    </tr>
+
+{%for i in range(0,value1) %}
+
+    <tr>
+        <td>
+            {{value[i]['bookName']}}
+        </td>
+        <td>
+            {{value[i]['authorName']}}
+        </td>
+        <td>
+            {{value[i]['genre']}}
+        </td>
+        <td>
+            <form action="{{ url_for('buyConfirmation') }}" method="post">
+                <input type="text" hidden name="bookName" value="{{value[i]['bookName']}}">
+                <input type="submit" name="rent" value="Buy" onclick="confirm()">
+            </form>
+        </td>
+ </tr>
+<script type="text/javascript">
+    function confirm(){
+        alert('Are you sure you want to purchase this book?');
+    }
+</script>
+{%endfor%}
+</table>
+{% endblock %}
