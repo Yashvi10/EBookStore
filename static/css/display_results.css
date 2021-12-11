@@ -1,9 +1,6 @@
-
-.img {
-        display:block;
-        width:100%; height:100%;
-        object-fit:contain;
-    }
+/* Author Saloni Raythatha */
+/* For learning purpose of html and css for our frontend to our application I have referred  from w3.schools */
+/* Have taken bookstore image from https://www.istockphoto.com/photos/bookstore */
 
 .display_results_container {
   position: absolute;
@@ -11,33 +8,41 @@
   width: auto;
 }
 
+.whole-container {
+  margin: auto auto;
+  width: auto;
+  height: 12000px;
+  background-color: bisque;
+}
+
 .image_container {
   width: 200px;
-    height: 200px;
+  height: 200px;
 }
 
-/* The navbar */
-.navigationBar {
+.bookdetails_container{
+  width: 199px;
+  word-break: break-all;
+  white-space: normal;
+}
+.webpage_navigationbar {
   overflow: hidden;
   background-color: #333;
-    padding-right:30px;
-
+  padding-right:29px;
 }
 
-/* Navbar links */
-.navigationBar a {
+.webpage_navigationbar a {
   float: left;
   color: white;
   text-align: center;
-  padding: 14px 16px;
-  padding-right:150px;
+  padding: 13px 16px;
+  padding-right:149px;
   border-color: black;
-
   text-decoration: none;
-  font-size: 17px;
+  font-size: 16px;
 }
 
-.navigationBar a:hover {
+.webpage_navigationbar a:hover {
     background-color: white;
     color: black;
 }
